@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	overflow-y: hidden;
+}
+
+/*nav bar*/
+
+nav{
+	display: flex;
+	background-color: rgb(255, 0, 0);
+	justify-content: space-around;
+	color: white;
+	height: 40px;
+	align-items: center;
+	position: fixed;
+  	top: 0;
+  	width: 100%;
+}
+
+nav .logo{
+	letter-spacing: 1.5px;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	width: 40%;
+	justify-content: space-between;
+}
+
+nav ul li a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 0,8em;
+}
+
+nav ul li a:hover{
+	color:rgb(203, 203, 203)
+}
+
+/* hamburger menu */
+
+.menu-toggle{
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+
+}
+
+.menu-toggle input{
+	position: absolute;
+	width: 40px;
+	height: 28px;
+	left: -5px;
+	top: -3px;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.menu-toggle span{
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: rgb(206, 206, 206);
+	border-radius: 3px;
+	transition: all 0.5s;
+
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2){
+	transform-origin: 0 0 ;
+}
+
+.menu-toggle span:nth-child(4){
+	transform-origin: 0 100% ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+	background-color: white;
+	transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+	background-color: white;
+	transform: rotate(-45deg) translate(-1px, 0);
+}
+
+
+
+/* Ressponsive Breakpoint */
+
+/* Tablet size */
+
+@media screen and (max-width: 768px){
+	nav ul{
+		width: 50%
+	}
+}
+
+/* Mobile screen */
+
+@media screen and (max-width: 576px){
+	.menu-toggle{
+		display: flex;
+	}
+	nav ul{
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		width: 80%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		z-index: -1;
+		background-color: red;
+		transform: translateX(100%);
+		transition: all 1s;
+		opacity: 0;
+	}
+	nav ul li a{
+		border: solid 2px;
+		color: rgb(0, 0, 0);
+		width: 300px;
+		height: 40px;
+		text-align: center;
+		display: block;
+		border-radius: 8px;
+	}
+	nav ul.slide {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
