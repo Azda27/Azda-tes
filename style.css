@@ -5,15 +5,16 @@
 }
 body{
 	overflow-y: hidden;
+	background-color: #5BC0F8;
 }
 
 /*nav bar*/
 
 nav{
 	display: flex;
-	background-color: rgb(255, 0, 0);
+	background-color: #0081C9;
 	justify-content: space-around;
-	color: white;
+	color: #FFC93C;
 	height: 60px;
 	align-items: center;
 	position: fixed;
@@ -35,7 +36,7 @@ nav ul{
 }
 
 nav ul li a{
-	color: rgb(255, 255, 255);
+	color: #FFC93C;
 	text-decoration: none;
 	font-size: 14pt;
 }
@@ -72,7 +73,7 @@ nav ul li a:hover{
 	height: 3px;
 	background-color: rgb(206, 206, 206);
 	border-radius: 3px;
-	transition: all 0.5s;
+	transition: all 0.4s;
 
 }
 
