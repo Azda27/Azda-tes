@@ -152,6 +152,9 @@ nav ul li a:hover{
 		transition: all 1s;
 		opacity: 0;
 	}
+	.dark-mode ul{
+		background-color: #2C3333;
+	}
 	nav ul li a{
 		border: solid 2px;
 		color: rgb(0, 0, 0);
