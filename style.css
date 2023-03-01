@@ -49,6 +49,12 @@ nav ul li a:hover{
 	color:rgb(203, 203, 203)
 }
 
+/* darkmode */
+
+.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
 /* hamburger menu */
 
 .menu-toggle{
