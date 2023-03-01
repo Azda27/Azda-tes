@@ -16,9 +16,9 @@ body{
 
 nav{
 	display: flex;
-	background-color: #0081C9;
+	background-color: #8E806A;
 	justify-content: space-around;
-	color: #FFC93C;
+	color: #FFE6BC;
 	height: 60px;
 	align-items: center;
 	position: fixed;
@@ -40,7 +40,7 @@ nav ul{
 }
 
 nav ul li a{
-	color: #FFC93C;
+	color: #FFE6BC;
 	text-decoration: none;
 	font-size: 14pt;
 }
