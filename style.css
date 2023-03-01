@@ -52,6 +52,13 @@ nav ul li a:hover{
 .asw{
 	margin-top: 60px;
 }
+button{
+	border: none;
+	border-radius: 100%;
+}
+.dark-mode button{
+	background-color: #8E806A;
+}
 /* darkmode */
 
 .dark-mode {
