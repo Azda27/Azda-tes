@@ -52,8 +52,17 @@ nav ul li a:hover{
 /* darkmode */
 
 .dark-mode {
-    background-color: #444;
+    background-color: #395B64;
     color: #fff;
+}
+.dark-mode .logo{
+	color: #E7F6F2;
+}
+.dark-mode nav{
+	background-color: #2C3333;
+}
+.dark-mode nav ul li a{
+	color: #E7F6F2;
 }
 /* hamburger menu */
 
