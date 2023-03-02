@@ -11,4 +11,10 @@ const darkModeBtn = document.querySelector('.dark-mode');
 const body = document.querySelector('body');
 
 darkModeBtn.addEventListener('click', () => {
-body.classList.toggle('dark-mode');});
+  document.body.classList.toggle('dark-mode');
+  if (darkModeBtn.innerHTML === '<span class="material-symbols-outlined">dark_mode</span>') {
+    darkModeBtn.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
+  } else {
+    darkModeBtn.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
+  }
+});
