@@ -49,9 +49,8 @@ nav ul li a:hover{
 button{
 	border: none;
 	border-radius: 100%;
-}
-.dark-mode button{
-	background-color: #8E806A;
+	width: 30px;
+	height: 30px;
 }
 /* darkmode */
 
@@ -67,6 +66,9 @@ button{
 }
 .dark-mode nav ul li a{
 	color: #E7F6F2;
+}
+.dark-mode button{
+	background-color: #8E806A;
 }
 /* hamburger menu */
 
