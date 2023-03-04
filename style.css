@@ -23,10 +23,12 @@ nav{
   	top: 0;
   	width: 100%;
 }
-nav .logo{
+.logo a{
 	letter-spacing: 1.5px;
 	font-size: 22pt;
 	text-decoration: none;
+	font-family: bungee, sans-serif;
+	color: #FFE6BC;
 }
 nav ul{
 	display: flex;
@@ -57,7 +59,7 @@ button{
     background-color: #395B64;
     color: #fff;
 }
-.dark-mode .logo{
+.dark-mode .logo a{
 	color: #E7F6F2;
 }
 .dark-mode nav{
