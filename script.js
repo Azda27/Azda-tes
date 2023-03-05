@@ -1,37 +1,23 @@
-	// Hamburger Menu
+// Hamburger Menu
 const menuToggle = document.querySelector('.menu-toggle input');
 const nav = document.querySelector('nav ul');
-  
-menuToggle.addEventListener( 'click', function () {
-nav.classList.toggle( 'slide');});
+menuToggle.addEventListener('click', () => nav.classList.toggle('slide'));
     
-  // dark-mode
-
+// Dark Mode
 const darkModeBtn = document.querySelector('.dark-mode');
 const body = document.querySelector('body');
-
-darkModeBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  if (
-    darkModeBtn.innerHTML === '<span class="material-symbols-outlined">dark_mode</span>') {
-    darkModeBtn.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
-  } else {
-    darkModeBtn.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
-  }
-});
-
-// Check localStorage for dark mode
 const darkMode = localStorage.getItem('darkMode');
-if (darkMode === 'enabled') {
- body.classList.add('dark-mode');
- darkModeBtn.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
-}
 
-// Add or remove dark mode to localStorage
+if (darkMode === 'enabled') toggleDarkMode();
+
 darkModeBtn.addEventListener('click', () => {
- if (darkMode !== 'enabled') {
- localStorage.setItem('darkMode', 'enabled');
- } else {
- localStorage.removeItem('darkMode');
- }
+  toggleDarkMode();
+  localStorage.setItem('darkMode', body.classList.contains('dark-mode') ? 'enabled' : '');
 });
+
+function toggleDarkMode() {
+  body.classList.toggle('dark-mode');
+  darkModeBtn.innerHTML = body.classList.contains('dark-mode')
+    ? '<span class="material-symbols-outlined">light_mode</span>'
+    : '<span class="material-symbols-outlined">dark_mode</span>';
+}
