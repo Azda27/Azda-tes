@@ -19,3 +19,19 @@ darkModeBtn.addEventListener('click', () => {
     darkModeBtn.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
   }
 });
+
+// Check localStorage for dark mode
+const darkMode = localStorage.getItem('darkMode');
+if (darkMode === 'enabled') {
+ body.classList.add('dark-mode');
+ darkModeBtn.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
+}
+
+// Add or remove dark mode to localStorage
+darkModeBtn.addEventListener('click', () => {
+ if (darkMode !== 'enabled') {
+ localStorage.setItem('darkMode', 'enabled');
+ } else {
+ localStorage.removeItem('darkMode');
+ }
+});
