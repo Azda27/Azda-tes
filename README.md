@@ -2,7 +2,7 @@
 
 # preview https://tes.azda-me.my.id/
 
-## update v3.1
+## update v1.3
 
 added clear cache and added theme features according to what is being used on the device
 
