@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0);
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-y: hidden;
+  background-color: #c3b091;
+}
+/*nav bar*/
+
+nav {
+  display: flex;
+  background-color: #8e806a;
+  justify-content: space-around;
+  color: #ffe6bc;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.logo a {
+  letter-spacing: 1.5px;
+  font-size: 22pt;
+  text-decoration: none;
+  font-family: bungee, sans-serif;
+  color: #ffe6bc;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+nav ul li a {
+  color: #ffe6bc;
+  text-decoration: none;
+  font-size: 14pt;
+}
+nav ul li a:hover {
+  color: rgb(203, 203, 203);
+}
+.margin-top {
+  margin-top: 90px;
+}
+/* darkmode */
+
+.dark-mode {
+  background-color: #395b64;
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+.dark-mode .dark-mode {
+  background-color: #8e806a;
+}
+.dark-mode .logo a {
+  color: #e7f6f2;
+}
+.dark-mode nav {
+  background-color: #2c3333;
+}
+.dark-mode nav ul li a {
+  color: #e7f6f2;
+}
+/* hamburger menu */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(206, 206, 206);
+  border-radius: 3px;
+  transition: all 0.4s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
