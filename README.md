@@ -10,6 +10,6 @@ Change the darkmode color to a new color
 
 added clear cache and added theme features according to what is being used on the device
 
-### example:
+### Example:
 
 when our device is light mode it will automatically light mode and vice versa
