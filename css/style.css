@@ -3,6 +3,32 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --white: #fff; /* mark */
+  --dark-1: #2b2d42; /* mark */
+  --dark-2: #0f4c81; /* mark */
+  --dark-3: #636de0; /* mark */
+
+  --color1: #fffacd;
+  --color2: #ffc0cb;
+  --color3: #ffa500;
+  --color4: #ffff00;
+  --color5: #32cd32;
+  --color6: #e6e6fa;
+  --color7: #335aa3; /* mark */
+  --color8: #87ceeb;
+  --color9: #a020f0;
+  --color10: #ff00ff;
+  --color11: #fffdd0;
+  --color12: #ffe5b4;
+  --color13: #90ee90;
+  --color14: #d2b48c;
+  --color15: #c0c0c0;
+  --color16: #fa8072;
+  --color17: #808080;
+  --color18: #008080;
+  --color19: #f5f5dc;
+}
 html {
   overflow-x: hidden;
 }
@@ -50,24 +76,27 @@ nav ul li a:hover {
 /* darkmode */
 
 .dark-mode {
-  background-color: #395b64;
-  color: #fff;
+  background-color: var(--dark-2);
+  color: var(--white);
   border: none;
   border-radius: 100%;
   width: 30px;
   height: 30px;
 }
 .dark-mode .dark-mode {
-  background-color: #8e806a;
+  background-color: #8e806a; /* Button */
 }
 .dark-mode .logo a {
-  color: #e7f6f2;
+  color: var(--dark-3);
 }
 .dark-mode nav {
-  background-color: #2c3333;
+  background-color: var(--dark-1);
 }
 .dark-mode nav ul li a {
-  color: #e7f6f2;
+  color: var(--dark-3);
+}
+.dark-mode nav ul li a:hover {
+  color: var(--color7);
 }
 /* hamburger menu */
 
