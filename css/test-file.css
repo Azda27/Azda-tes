@@ -1,0 +1,27 @@
+.wrapper {
+  height: 20px;
+  width: 100%;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+  bottom: 10px;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.bx-trash {
+  margin-top: 10px;
+  margin-left: 1;
+}
+
+.wrapper .facebook:hover {
+  background: #1877f2;
+  color: #fff;
+}
