@@ -1,0 +1,4 @@
+User-agent: Azda
+Disallow: /
+Crawl-delay: 120
+Sitemap: tes.azda-me.my.id
