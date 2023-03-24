@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,200,0,200);
-@import url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
 * {
   margin: 0;
   padding: 0;
@@ -129,8 +128,8 @@ input:checked + .slider:before {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.bx-trash {
-  margin-top: 10px;
+.material-symbols-outlined {
+  margin-top: 5px;
   margin-left: 1;
 }
 
