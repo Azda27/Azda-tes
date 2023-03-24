@@ -41,6 +41,7 @@ nav {
   text-decoration: none;
   font-family: bungee, sans-serif;
   color: var(--color-23f);
+  font-display: swap;
 }
 nav ul {
   display: flex;
@@ -52,6 +53,7 @@ nav ul li a {
   color: var(--color-23f);
   text-decoration: none;
   font-size: 16pt;
+  font-display: swap;
 }
 nav ul li a:hover {
   color: var(--color10);
