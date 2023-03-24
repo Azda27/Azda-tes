@@ -1,4 +1,4 @@
-@import url();
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@
   --color7: #335aa3; /* mark */
   --color9: #646fd4; /* mark */
   --color10: #5584ac; /* mark */
-  --color-23f: #93bfcf; /* mark */
+  --color-23f: #87ceeb; /* mark */
   --color-23ef: #bdcdd6; /* mark */
 }
 html {
@@ -51,7 +51,7 @@ nav ul {
 nav ul li a {
   color: var(--color-23f);
   text-decoration: none;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 nav ul li a:hover {
   color: var(--color10);
